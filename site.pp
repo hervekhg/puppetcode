@@ -1,3 +1,7 @@
-node 'hg-puppet-agent' {
+node 'hg-puppet-agent', 'hg-puppet-agent-2 {
     include ntpconfig
+}
+
+node 'default' {
+
 }
