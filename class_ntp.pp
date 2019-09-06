@@ -7,7 +7,7 @@ class ntpconfig {
     #NTP config file
     file { "/etc/ntp.conf":
         ensure => "present",
-        content = "server 0.fr.pool.ntp.org iburst\n",
+        content => "server 0.fr.pool.ntp.org iburst\n",
     }
 
     #NTP service startup
@@ -16,5 +16,5 @@ class ntpconfig {
     }
 
 }
-# Declare class
+# Declare class (Should be done in site.pp)
 include ntpconfig

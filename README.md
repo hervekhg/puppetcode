@@ -15,4 +15,13 @@ Resource (Level 0)-> Class (Level 1) -> Manifests (Level 2)
 - service
 - user
 
-## Class created
+## Manifests
+- site.pp : Declare class
+
+## Node Definition
+```
+#site.pp
+node "host01" {
+  include ntp.config
+} 
+```
