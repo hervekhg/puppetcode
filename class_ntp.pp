@@ -16,5 +16,3 @@ class ntpconfig {
     }
 
 }
-# Declare class (Should be done in site.pp)
-include ntpconfig
